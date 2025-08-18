@@ -7,7 +7,7 @@ This project implements a binary image classifier to detect forest fires using d
 - Data is split into training and testing sets, each containing images and YOLO-format label files.
 
 ## Workflow
-1. **Imports**: Loads required libraries (TensorFlow, NumPy, Matplotlib, PIL, etc.).
+1. **Imports**: Loads required libraries (PyTorch, NumPy, Matplotlib, PIL, etc.).
 2. **Data Loading**: Custom function loads images and labels, matches them, and preprocesses images to 128x128 RGB arrays.
 3. **Data Augmentation**: Uses `ImageDataGenerator` for basic augmentation (rotation, zoom, horizontal flip).
 4. **Model Architecture**: Sequential CNN with three convolutional layers, max pooling, and dense layers for binary classification.
@@ -23,7 +23,7 @@ This project implements a binary image classifier to detect forest fires using d
 
 ## Requirements
 - Python 3.x
-- TensorFlow
+- PyTorch
 - NumPy
 - Matplotlib
 - scikit-learn
@@ -31,7 +31,7 @@ This project implements a binary image classifier to detect forest fires using d
 
 Install dependencies with:
 ```bash
-pip install tensorflow numpy matplotlib scikit-learn pillow
+pip install torch numpy matplotlib scikit-learn pillow
 ```
 
 ## Notes
